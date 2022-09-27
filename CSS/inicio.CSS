@@ -1,0 +1,134 @@
+body {
+    width: 0px;
+    padding: 0px;
+    height: 0px;
+}
+
+body {
+    background-color: lightblue;
+    margin: 0%;
+}
+
+h1 {
+    margin: 0%;
+    padding: 0%;
+    z-index: -100;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 8%;
+    z-index: 100%;
+    position: fixed;
+    top: 1%;
+    padding: 0.001% 0.05%;
+    color: white;
+    font-size: 280%;
+    letter-spacing: 3%;
+    z-index: -100;
+}
+
+
+/* ESTILO MENU*/
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+div#m {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 100;
+    color: white;
+}
+
+div#m {
+    color: white;
+    font-family: cursive;
+    box-sizing: border-box;
+    margin-top: 60px;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    /*background-image: url(../imag/a.jpg);**/
+    background: rgba(254, 187, 4, 0.5);
+}
+
+header#men {
+    width: 100%;
+    height: 50%;
+    background: none;
+    z-index: 100;
+}
+
+.menu {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    perspective: 200px;
+    z-index: 100;
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    margin: auto;
+    z-index: 100;
+    color: white;
+}
+
+.menu li {
+    color: white;
+    list-style: none;
+    padding: 15px 20px;
+    z-index: 100;
+}
+
+.menu li:hover {
+    background: transparent;
+    cursor: pointer;
+    transition: all 300ms;
+    background: rgba(7, 237, 245, 0.5);
+    z-index: 100;
+    color: white;
+}
+
+.menu ul li ul {
+    color: white;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(4, 175, 254, 0.5);
+    /*background-image: url(../imag/a.jpg);*/
+    margin-top: 15px;
+    transform: rotatey(240deg) scale(0);
+    transition: all 1s;
+    box-shadow: 1px 1px 10px 0px white;
+    z-index: 100;
+}
+
+.menu ul li:hover>ul {
+    transform: rotatey(0deg) scale(1);
+    transition: all 1s;
+    z-index: 100;
+}
+
+.menu ul li ul:before {
+    content: " ";
+    width: 0%;
+    height: 0%;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid transparent/*#97C4DB*/
+    ;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 20px;
+    z-index: 100;
+}
+
+
+/*    FIN DE MENU*/
